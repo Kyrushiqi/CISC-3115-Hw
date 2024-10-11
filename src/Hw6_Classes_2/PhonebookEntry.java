@@ -1,7 +1,7 @@
 package Hw6_Classes_2;/*
 Notes:
-Hw5_Classes_1.Name class is mutable -- use defensive copies
-Hw5_Classes_1.PhoneNumber class is immutable
+Name class is mutable -- use defensive copies
+PhoneNumber class is immutable
 
 The copy constructor should make a deep copy of the original object.
  */
@@ -47,7 +47,7 @@ public class PhonebookEntry {
         Is the PhonebookEntry object that is calling the isEqualTo method equal to
         the "other" PhonebookEntry object
 
-        PhonebookEntry phonebookEntry1 = new PhonebookEntry(new Hw5_Classes_1.Name("Jane", "Doe"), new Hw5_Classes_1.PhoneNumber("123-456-7890"));
+        PhonebookEntry phonebookEntry1 = new PhonebookEntry(new Name("Jane", "Doe"), new PhoneNumber("123-456-7890"));
         PhonebookEntry phonebookEntry2 = new PhonebookEntry(phonebookEntry1);
         System.out.println(phonebookEntry1.isEqualTo(phonebookEntry2)); // true
      */

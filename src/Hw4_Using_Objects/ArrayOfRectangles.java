@@ -1,13 +1,13 @@
 package Hw4_Using_Objects; /**
 Hw 4 (using objects) Objective:
-1) Read in from file 'rectangles.txt' and place Hw6_Classes_2.Rectangle objects into an array. Inheritance.A rectangle object
+1) Read in from file 'rectangles.txt' and place Rectangle objects into an array. Inheritance.A rectangle object
 has the following attributes in this order: x-coordinate, y-coordinate, width, height of a rectangle.
 The header number in the file tells us how many rectangle object information there is.
-2) Print using toString() method from Hw6_Classes_2.Rectangle class.
+2) Print using toString() method from Rectangle class.
 3) Print whether there are any consecutive Rectangles in the array that intersect each other.
 4) Print whether any of the Rectangles in the array intersect each other.
 
-Note: For 3 and 4, use the intersects boolean method from the Hw6_Classes_2.Rectangle class.
+Note: For 3 and 4, use the intersects boolean method from the Rectangle class.
  */
 
 import java.awt.Rectangle;
@@ -37,16 +37,16 @@ public class ArrayOfRectangles {
 
     public static void toString(Rectangle[]array){
         for (Rectangle rectangle : array) {
-            System.out.println("java.awt.Hw6_Classes_2.Rectangle[x=" + rectangle.x + ",y=" + rectangle.y + ",width=" + rectangle.width
+            System.out.println("java.awt.Rectangle[x=" + rectangle.x + ",y=" + rectangle.y + ",width=" + rectangle.width
                     + ",height=" + rectangle.height + "]");
             /* You can also replace the sout stuff with just "rectangle."
                It does the same thing as that long sentence
-               because it's built into the Hw6_Classes_2.Rectangle class that way.
+               because it's built into the Rectangle class that way.
                     System.out.println(rectangle);*/
         }
 
         /*for(int i=0; i<array.length;i++){
-            System.out.println("java.awt.Hw6_Classes_2.Rectangle[x=" + array[i].x + ",y=" + array[i].y + ",width=" + array[i].width
+            System.out.println("java.awt.Rectangle[x=" + array[i].x + ",y=" + array[i].y + ",width=" + array[i].width
             + ",height=" + array[i].height + "]");
         }*/
 

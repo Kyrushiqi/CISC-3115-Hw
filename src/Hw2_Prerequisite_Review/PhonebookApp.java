@@ -13,7 +13,7 @@ public class PhonebookApp {
         String[] phoneNumber = new String[MAX_ENTRIES];
 
         Scanner keybd = new Scanner(System.in);
-        System.out.print("Hw5_Classes_1.Name of input file: "); // entries_input.txt
+        System.out.print("Name of input file: "); // entries_input.txt
         String fileName = keybd.next();
         Scanner fileSc = new Scanner(new File(fileName));
         System.out.println();
@@ -59,7 +59,7 @@ public class PhonebookApp {
             }
         }while(choice != 'q');
 
-        System.out.print("Hw5_Classes_1.Name of output file: "); // entries_output.txt
+        System.out.print("Name of output file: "); // entries_output.txt
         fileName = keybd.next();
         printEntries(firstName, lastName, phoneNumber, fileName, numEntries);
 
@@ -139,7 +139,7 @@ public class PhonebookApp {
         int nameIndex = indexOfStrings(firstName, lastName, numEntries, inputFN, inputLN);
 
         if(nameIndex == -1){
-            System.out.println("Hw5_Classes_1.Name not found");
+            System.out.println("Name not found");
         }else{
             System.out.print("New phone number: ");
             String newPhoneNum = keybd.next();
@@ -177,7 +177,7 @@ public class PhonebookApp {
 
         int i = indexOfStrings(firstName, lastName, numEntries, inputFirstName, inputlastName);
         if(i == -1){
-            System.out.println("Hw5_Classes_1.Name not found");
+            System.out.println("Name not found");
         }else{
             System.out.println(firstName[i] + " " + lastName[i] + "'s phone number is " +  phoneNumber[i]);
         }
